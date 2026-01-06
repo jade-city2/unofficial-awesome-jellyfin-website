@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CONTRIBUTING/awesome-jellyfin</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+<h1 id="contribution-guidelines">Contribution Guidelines</h1>
+<p>Please note that this project is released with a
+<a href="CODE-OF-CONDUCT.md">Contributor Code of Conduct</a>. By participating in this
+project you agree to abide by its terms.</p>
+<h2 id="pull-requests">Pull Requests</h2>
+<p>Ensure your pull request adheres to the following guidelines:</p>
+<ul>
+<li>Use the <a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits specification</a> (<code>&lt;type&gt;[optional scope]: &lt;description&gt;</code>)</li>
+<li><strong>Alphabetical Sorting</strong>: Items in <code>README.md</code> must be sorted alphabetically. See <a href="#sorting-rules">Sorting Rules</a>.</li>
+<li><strong>Generated Content</strong>: Some files, like <code>CLIENTS.md</code> are automatically generated from files. You should only edit the original source files from which they&#39;re generated from. See <a href="#generated-content">Generated Content</a>.</li>
+<li>Search previous suggestions before making a new one, as yours may be a duplicate</li>
+<li>New categories, or improvements to the existing categorization are welcome</li>
+<li>Keep descriptions short and simple, but descriptive and non-promotional</li>
+</ul>
+<p>Thank you for your suggestions!</p>
+<h2 id="sorting-rules">Sorting Rules</h2>
+<p>Certain lists within this repository should be kept <strong>alphabetically sorted</strong>, according to a canonical version of each item. 
+The rules for deriving this canonical version (used for sorting) are as follows:</p>
+<ol>
+<li><strong>Square Brackets</strong>:  <ul>
+<li>If the line contains text in square brackets (e.g., <code>- [My Item]</code>), only that bracketed text is used to determine the item&#39;s position.</li>
+<li>If there are no square brackets, the entire line (minus the leading &quot;<code>-</code>&quot; if present) is used.</li>
+</ul>
+</li>
+<li><strong>Removing Characters</strong>:  <ul>
+<li>From that resulting text, remove the following characters for sorting:<pre><code>  [ -_().`',<span class="hljs-symbol">:!?</span>]
+</code></pre></li>
+</ul>
+</li>
+</ol>
+<p>If two items end up with the same canonical text, their <strong>original order</strong> is preserved. </p>
+<blockquote>
+<p>[!NOTE]
+A bot will automatically check your PR for correct order.  </p>
+<ul>
+<li>You can manually fix sorting or ask a maintainer to run <code>/sort-check -fix</code> (if needed).</li>
+</ul>
+</blockquote>
+<h2 id="generated-content">Generated Content</h2>
+<p>Some files in this repository are automatically generated from other source files. For example, <code>CLIENTS.md</code> is generated from <code>assets/clients/clients.yaml</code>.  </p>
+<ul>
+<li><strong>Do not edit these generated files directly.</strong> Instead, edit the original source files from which they’re generated.  </li>
+<li>Each generated file clearly indicates that it is automatically generated.</li>
+<li>Once you push your changes to the source file, the project’s checks will automatically regenerate the corresponding output file.  </li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+For pull requests, a preview of the updated generated files will appear in the <strong>Checks</strong> tab of the pull request.
+<img src="https://github.com/user-attachments/assets/5ca13a18-f68d-4dc5-b91b-caa9015132d0" alt="image"></p>
+</blockquote>
+<h2 id="updating-your-pr">Updating your PR</h2>
+<p>A lot of times, making a PR adhere to the standards above can be difficult.
+If the maintainers notice anything that we&#39;d like changed, we&#39;ll ask you to
+edit your PR before we merge it. There&#39;s no need to open a new PR, just edit
+the existing one. If you&#39;re not sure how to do that,
+<a href="https://github.com/RichardLitt/knowledge/blob/master/github/amending-a-commit-guide.md">here is a guide</a>
+on the different ways you can update your PR so that we can merge it.</p>
+</body>
+</html>
